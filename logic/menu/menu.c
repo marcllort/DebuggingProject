@@ -30,7 +30,7 @@ int askUserForOption() {
 }
 
 int isCorrect(int option) {
-	return option < FIRST_OPTION && option > LAST_OPTION;
+	return option >= FIRST_OPTION && option <= LAST_OPTION;			//Segon fallo menu
 }
 
 int isExit(int option) {
